@@ -1,0 +1,35 @@
+package co.edu.uco.crosscutting.unittesting;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import co.edu.uco.crosscutting.helpers.ObjectHelper;
+
+class HelpersUnitTestCase {
+
+	@Test
+	void givenWantValidateIfObjectIsNullWhenObjectIsNullThenResultsIsFalse() {
+		// Arrange: Initial Context
+		var Object="";
+	
+		//Act
+		boolean result = ObjectHelper.isNull(Object);
+		
+		//Assert
+	
+		assertFalse(result);
+	}
+	@Test
+	void givenWantValidateIfObjectIsNotNullWhenObjectIsNullThenResultsIsTrue() {
+		// Arrange: Initial Context
+		String Object=null;
+		
+	    //Act
+		boolean result = ObjectHelper.isNull(Object);
+		
+		//Assert
+	
+		assertTrue(result);
+	}
+}

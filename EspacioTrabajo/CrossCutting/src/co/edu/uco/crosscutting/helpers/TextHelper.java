@@ -31,11 +31,6 @@ public class TextHelper {
 	public static String applyTrim(final String string) {
 		return getDefault(string).trim();
 	}
-	
-	public static void main(String [] arg) {
-		String b = null;
-		
-		System.out.println(isEmpty(b));
-	}
+
 
 }

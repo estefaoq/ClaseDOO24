@@ -11,11 +11,11 @@ public class ObjectHelper {
 
 	}
 	
-	public static <O> O getDefault(final O Object,final O defaultObject) {
+	public static <O> O getDefault(final O Object, final O defaultObject) {
 		return isNull(Object) ? defaultObject : Object;
 					
 		}
 
-	}
-
 }
+
+

@@ -9,33 +9,52 @@ import co.edu.uco.crosscutting.helpers.ObjectHelper;
 class HelpersUnitTestCase {
 
 	@Test
-	void givenWantValidateObjectIsNullWhenObjectIsNullThenResultIsTrue() {
-		//Arrange: Initial Context
+	void givenWantValidateIfObjectIsNullwhenObjectIsNullThenResultIsTrue() {
+		//arrange: Initial Context 
 		String object = null;
-		//Act: Execute action
+		
+		//act
 		boolean result = ObjectHelper.isNull(object);
+		
 		//Assert
 		assertTrue(result);
-	}
-
-	@Test
-	void givenWantValidateObjectIsNotNullWhenObjectIsNotNullThenResultIsFalse() {
-		//Arrange
-		var object = "";
-		//Act
-		boolean result = ObjectHelper.isNull(object);
-		//Assert
-		assertFalse(result);
+		
 	}
 	@Test
-	void givenWantGetOriginalValidateObjectIsNotNullWhenObjectIsNotNullThenResultIsFalse() {
-		//Arrange
+	void givenWantValidateIfObjectIsNotNullwhenObjectIsNotNullThenResultIsFalse() {
+		//arrange: Initial Context 
 		var object = "";
 		
-		//Act
+		//act : execute action
 		boolean result = ObjectHelper.isNull(object);
-		//Assert
+		
+		//Assert validate result
 		assertFalse(result);
+   }
+	@Test
+	void givenWantGetOriginalValuewhenObjectIsNotNullThenResultIsTheSameObject() {
+		//arrange: Initial Context 
+		var object = "casa";
+		var defaultValue = "Default";
+		
+		//act : execute action
+		var result = ObjectHelper.getDefault(object, defaultValue);
+		
+		//Assert validate result
+		assertEquals(object, result);
 	}
+
+
+@Test
+void givenWantGetDefaultValuewhenObjectIsNotNullThenResultIsDefaultObject() {
+	//arrange: Initial Context 
+	String object = null;
+	var defaultValue = "Default";
 	
+	//act : execute action
+	var result = ObjectHelper.getDefault(object, defaultValue);
+	
+	//Assert validate result
+	assertEquals(defaultValue, result);
+  }
 }

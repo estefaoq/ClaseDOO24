@@ -13,7 +13,7 @@ public class UcoApplicationException extends RuntimeException {
 	private Layer layer;
 	
 	public UcoApplicationException(final String userMessage, final String technicalMessage, final Exception rootException,final Layer layer) {
-		super(TextHelper.applyTrim(technicalMessage), ObjectHelper.getDefault(rootException, new Exception());
+		super(TextHelper.applyTrim(technicalMessage), ObjectHelper.getDefault(rootException, new Exception()));
 		
 		setUserMessage(userMessage);
 		setLayer(layer);

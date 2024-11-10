@@ -1,5 +1,7 @@
 package co.edu.uco.ucobet.businessLogic.adapter.dto;
 
+import java.util.List;
+
 import co.edu.uco.ucobet.businessLogic.adapter.Adapter;
 import co.edu.uco.ucobet.domain.StateDomain;
 import co.edu.uco.ucobet.dto.StateDTO;
@@ -23,6 +25,18 @@ public final class StateDTOAdapter implements Adapter<StateDomain, StateDTO>{
 		
 	}
 	public StateDTO adaptTarget(StateDomain data) {
+		return null;
+	}
+
+	@Override
+	public StateDomain adaptSorurce(StateDTO data) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<StateDTO> adaptTarget(List<StateDomain> data) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 	

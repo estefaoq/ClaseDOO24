@@ -14,7 +14,7 @@ public class CountryDomain extends Domain{
 		setName(name);
 	}
 	
-	static final CountryDomain create() {
+	public static final CountryDomain create(UUID uuid, String string) {
 		return new CountryDomain(UUIDHelper.getDefault(), TextHelper.EMPTY);
 	}
 	

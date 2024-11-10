@@ -1,4 +1,5 @@
 package co.edu.uco.ucobet.crosscutting.exceptions;
+
 import co.edu.uco.crosscutting.exceptions.enums.Layer;
 
 public class DataUcoBetException extends UcoBetException {
@@ -21,6 +22,5 @@ public class DataUcoBetException extends UcoBetException {
 	public static final DataUcoBetException crear(final String userMessage, final String technicalMessage) {
 		return new DataUcoBetException(userMessage, technicalMessage, new Exception());
 	}
-
 
 }

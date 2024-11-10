@@ -3,10 +3,9 @@ import java.sql.Connection;
 import java.util.List;
 import java.util.UUID;
 
-import co.edu.uco.crosscutting.exception.DataUcoBetException;
 import co.edu.uco.crosscutting.helpers.SqlConnectionHelper;
-import co.edu.uco.ucobet.data.dao.CountryDAO;
-import co.edu.uco.ucobet.entity.CountryEntity;
+import co.edu.uco.ucobet.crosscutting.exceptions.DataUcoBetException;
+
 
 public class SqlDAO {
 	//Good

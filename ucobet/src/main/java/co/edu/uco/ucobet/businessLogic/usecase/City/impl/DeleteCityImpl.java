@@ -4,9 +4,14 @@ import java.util.UUID;
 
 import co.edu.uco.ucobet.businessLogic.usecase.City.DeleteCity;
 
+
+
 public final class DeleteCityImpl implements DeleteCity{
 	
-	public void excute(final UUID data) {
+
+	@Override
+	public void execute(final UUID data) {
+		// TODO Auto-generated method stub
 		
 	}
 
